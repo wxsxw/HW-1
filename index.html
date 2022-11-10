@@ -5,26 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <a href="/index.html" class="logo">WebStudio</a>
-            <ul class="nav-list">
-                <li class="nav-link" class="current"><a href="./index.html">Студия</a></li>
-                <li class="nav-link"><a href="">Портфолио</a></li>
-                <li class="nav-link"><a href="">Контакты</a></li>
+            <ul class="nav-list list">
+                <li class="nav-link"><a href="./index.html" class=" link current">Студия</a></li>
+                <li class="nav-link"><a href="./Portfolio.html" class="link">Портфолио</a></li>
+                <li class="nav-link"><a href="" class="link">Контакты</a></li>
             </ul>
         </nav>
 
-    <ul class="header-contacts">
-        <li class="contact-email"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="contact-tel"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+    <ul class="header-contacts list">
+        <li class="contact-email"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+        <li class="contact-tel"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         
     </ul> 
-
     </header>
+  
     <main>
         <!-- Hero -->
         <section class="hero">
@@ -34,8 +38,8 @@
         </section>
         <!-- features -->
         <section class="features">
-            <h2>О нас</h2>
-            <ul class="features-list">
+            <h2 class="section-title">О нас</h2>
+            <ul class="features-list list">
                 <li class="features-items">
                     <h3 class="features-title">Внимание к деталям</h3>
                     <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -55,18 +59,18 @@
             </ul>
         </section>
         <!-- about -->
-        <section class="about">
-            <h2 class="about-title">Чем мы занимаемся</h2>
-            <ul class="about-list">
+        <section class="section">
+            <h2 class="section-title">Чем мы занимаемся</h2>
+            <ul class="about-list list">
                 <li class="about-item"><img src="/img/box1.jpg" alt="comp" width="370"></li>
                 <li class="about-item"><img src="/img/box2.jpg" alt="tel" width="370"></li>
                 <li class="about-item"><img src="/img/box3.jpg" alt="tabl" width="370"></li>
             </ul>
         </section>
         <!--  teams  -->
-        <section class="team">
-            <h2 class="team-title">Наша команда</h2>
-            <ul class="team-list">
+        <section class="section">
+            <h2 class="section-title">Наша команда</h2>
+            <ul class="team-list list">
                 <li class="team-card">
                     <img src="./img/img.jpg" class="card-picture" alt="Игорь Демьяненко" width="270">
                     <h3 class="card-title">Игорь Демьяненко</h3>
@@ -94,7 +98,7 @@
     <footer>
         <section class="footer">
             <a href="/" class="logo">WebStudio</a>
-            <ul class="footer-list">
+            <ul class="footer-list list">
                 <li class="footer-link">
                 <a href=""><address>г. Киев, пр-т Леси Украинки, 26</address></a></li>
                 <li class="footer-link"><address><a href="mailto:info@example.com">info@example.com</a></address></li>

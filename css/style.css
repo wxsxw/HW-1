@@ -1,27 +1,92 @@
+/* вторичный цвет текста #757575 */
+/* акцент #2196F3  */
+/* основной цвет текста #212121 */
+/* BG вторичны   #F5F4FA */
+/* BG основной #FFFFFF */
+/* BG темный цвет  #2F303A */
+/* цвет текста белый #FFFFFF */
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --BGC-basic: #ffffff;
+  --BGC-secondary: #f5f4fa;
+  --BGC-black: #2f303a;
+}
+/*  общие настройки */
+body {
+  background: var(--BGC-basic);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+.list {
+  list-style: none;
+}
+.section {
+}
+.section-title {
+  color: var(--primary-text-color);
+}
+.current {
+  color: var(--accent-color);
+}
+
 /* -----heder----- */
 .header {
 }
 .nav {
 }
 .logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 .nav-list {
 }
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--accent-color);
+}
 .nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .header-contacts {
 }
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+  color: var(--accent-color);
+}
 .contact-email {
+  font-weight: 500;
+  font-size: 14px;
+  /* line-height: 1.14px; */
+  letter-spacing: 0.02em;
 }
 .contact-tel {
+  font-weight: 500;
+  font-size: 14px;
+  /* line-height: 1.14px; */
+  letter-spacing: 0.02em;
 }
 
 /* ----- hero----- */
 .hero {
+  background-color: var(--BGC-black);
 }
 .hero-title {
+  color: var(--white-text-color);
 }
 .btn-accent {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  font-family: inherit;
 }
 
 /* ---- features--- */
@@ -34,23 +99,17 @@
 .features-title {
 }
 .features-text {
+  color: var(--secondary-text-color);
 }
 
 /* ---about---- */
-.about {
-}
-.about-title {
-}
+
 .about-list {
 }
 .about-item {
 }
 
 /* --- teams--- */
-.team {
-}
-.team-title {
-}
 .team-list {
 }
 .team-card {
@@ -60,12 +119,26 @@
 .card-title {
 }
 .card-text {
+  color: var(--secondary-text-color);
 }
 
 /* --- footer--- */
 .footer {
+  background-color: var(--BGC-black);
+  color: var(--white-text-color);
 }
 .footer-list {
 }
 .footer-link {
+}
+/* ----- Portfolio------------ */
+
+.filtr {
+}
+/* .btn-accent {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+} */
+.filtr-btn {
+  font-family: inherit;
 }

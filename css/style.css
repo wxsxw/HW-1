@@ -24,10 +24,18 @@ body {
 .list {
   list-style: none;
 }
+
+.link {
+  text-decoration: none;
+}
 .section {
 }
 .section-title {
-  color: var(--primary-text-color);
+  /* color: var(--primary-text-color); */
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 .current {
   color: var(--accent-color);
@@ -39,11 +47,19 @@ body {
 .nav {
 }
 .logo {
+  color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.header-logo {
+  color: var(--primary-text-color);
+}
+.header-logo:hover,
+.header-logo:focus {
+  color: var(--accent-color);
 }
 .nav-list {
 }
@@ -51,11 +67,11 @@ body {
 .nav-list .link:focus {
   color: var(--accent-color);
 }
-.nav-link {
+.nav-list .link {
+  color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 .header-contacts {
 }
@@ -63,17 +79,15 @@ body {
 .header-contacts .link:focus {
   color: var(--accent-color);
 }
-.contact-email {
+.header-contacts .link {
+  color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
-  /* line-height: 1.14px; */
-  letter-spacing: 0.02em;
+  line-height: 1.14px;
+}
+.contact-email {
 }
 .contact-tel {
-  font-weight: 500;
-  font-size: 14px;
-  /* line-height: 1.14px; */
-  letter-spacing: 0.02em;
 }
 
 /* ----- hero----- */
@@ -82,11 +96,20 @@ body {
 }
 .hero-title {
   color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
 }
 .btn-accent {
   background-color: var(--accent-color);
   color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
   font-family: inherit;
+  /* align-items: center;
+  text-align: center; */
 }
 
 /* ---- features--- */
@@ -97,9 +120,15 @@ body {
 .features-items {
 }
 .features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
 }
 .features-text {
   color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* ---about---- */
@@ -117,9 +146,15 @@ body {
 .card-picture {
 }
 .card-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
 }
 .card-text {
   color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 /* --- footer--- */
@@ -127,18 +162,59 @@ body {
   background-color: var(--BGC-black);
   color: var(--white-text-color);
 }
+.footer-logo {
+  color: var(--white-text-color);
+}
+.footer-logo:hover,
+.footer-logo:focus {
+  color: var(--accent-color);
+}
 .footer-list {
 }
+
 .footer-link {
+}
+.footer-list .link {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-list .address {
+  color: var(--white-text-color);
 }
 /* ----- Portfolio------------ */
 
 .filtr {
 }
-/* .btn-accent {
+.filtr-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  font-family: inherit;
+}
+.filtr-btn:hover,
+.filtr-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
-} */
-.filtr-btn {
-  font-family: inherit;
+}
+.filtr-btn--accent {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+/* -----project------ */
+.project {
+}
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+.project-text {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
 }

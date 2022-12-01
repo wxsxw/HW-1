@@ -25,7 +25,8 @@ body {
 }
 .conteiner {
   width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid tomato;
@@ -89,15 +90,56 @@ a {
 section {
   outline: 2px solid violet;
 }
+/* .d-flex {
+  display: flex;
+} */
 
-/* -----heder----- */
+/*------ Пробні-------- */
+/* .header {
+}
+.conteiner .logo {
+  display: flex;
+  margin-right: 93px;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+.nav .list {
+  display: flex;
+}
+.nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.nav .link + .link {
+  margin-left: 50px;
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contact + .contact {
+  margin-left: 30px;
+} */
+
+/* -----header----- */
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+.header-flex {
+  display: flex;
+  align-items: center;
+}
 .nav {
+  display: flex;
 }
 .logo {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -107,24 +149,34 @@ section {
 }
 .header-logo {
   color: var(--primary-text-color);
+  margin-right: 93px;
 }
 .header-logo:hover,
 .header-logo:focus {
   color: var(--accent-color);
 }
 .nav-list {
+  display: flex;
+}
+.nav-link + .nav-link {
+  margin-left: 50px;
 }
 .nav-list .link:hover,
 .nav-list .link:focus {
   color: var(--accent-color);
 }
 .nav-list .link {
+  display: block;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  padding: 32px 0;
 }
 .header-contacts {
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
 }
 .header-contacts .link:hover,
 .header-contacts .link:focus {
@@ -135,10 +187,16 @@ section {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14px;
+  padding: 32px 0;
 }
-.contact-email {
+.contact + .contact {
+  margin-left: 40px;
 }
-.contact-tel {
+.contact {
+  margin-left: 40px;
+}
+.contact + .contart {
+  margin-left: 40px;
 }
 
 /* ----- hero----- */
@@ -263,7 +321,6 @@ section {
 /* ----- Portfolio------------ */
 
 .filtr {
-  margin-top: 96px;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -288,6 +345,7 @@ section {
 
 /* -----project------ */
 .projects {
+  margin-top: 96px;
   margin-bottom: 96px;
 }
 .project {

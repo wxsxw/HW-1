@@ -90,9 +90,9 @@ a {
 section {
   outline: 2px solid violet;
 }
-/* .d-flex {
+.d-flex {
   display: flex;
-} */
+}
 
 /*------ Пробні-------- */
 /* .header {
@@ -125,10 +125,10 @@ section {
 } */
 
 /* -----header----- */
-.header {
+/* .header {
   padding-top: 24px;
   padding-bottom: 25px;
-}
+} */
 .header-flex {
   display: flex;
   align-items: center;
@@ -236,11 +236,13 @@ section {
 
 /* ---- features--- */
 .features {
-  padding: 94px 0 94px 0;
+  padding: 94px 0;
 }
 .features-list {
+  display: flex;
 }
-.features-items {
+.features-items + .features-items {
+  margin-left: 30px;
 }
 .features-title {
   font-weight: 700;
@@ -256,21 +258,31 @@ section {
 
 /* ---about---- */
 .about {
-  padding: 94px 0 94px 0;
+  padding: 94px 0;
 }
 .about-list {
+  display: flex;
+  justify-content: space-between;
 }
 .about-item {
 }
 
 /* --- teams--- */
 .team {
-  padding: 94px 0 94px 0;
+  padding: 94px 0;
 }
 .team-list {
+  display: flex;
 }
 .team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.team-card:not(:first-child) {
+  margin-left: 30px;
+}
+
 .card-picture {
   margin-bottom: 30px;
 }
@@ -345,12 +357,31 @@ section {
 
 /* -----project------ */
 .projects {
-  margin-top: 96px;
-  margin-bottom: 96px;
+  margin: 94px 0;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 .project {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% / 3 - 30px);
+  /* width: calc((100% - 30px) / 3); */
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
+
+/* .box-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+
 .project-cart {
+  display: flex;
   margin-bottom: 20px;
 }
 .project-title {

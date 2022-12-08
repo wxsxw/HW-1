@@ -17,20 +17,22 @@
 <body>
     <header class="header">
         <div class="conteiner">
-            <nav class="nav">
-                <a href="/index.html" class="logo">Web<span class="header-logo">Studio</span></a>
-                <ul class="nav-list list">
-                    <li class="nav-link"><a href="./index.html" class="link">Studio</a></li>
-                    <li class="nav-link"><a href="./Portfolio.html" class="link current">Portfolio</a></li>
-                    <li class="nav-link"><a href="" class="link">Contacts</a></li>
+            <div class="header-flex">
+                <nav class="nav">
+                    <a href="/index.html" class="logo ">Web<span class="header-logo">Studio</span></a>
+                    <ul class="nav-list list ">
+                        <li class="nav-link"><a href="./index.html" class=" link ">Studio</a></li>
+                        <li class="nav-link"><a href="./Portfolio.html" class="link current">Portfolio</a></li>
+                        <li class="nav-link"><a href="" class="link">Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="header-contacts list ">
+                    <li class="contact"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                    <li class="contact"><a href="tel:+12127724150" class="link">+1 212-772-4150</a></li>
+
                 </ul>
-            </nav>
-
-            <ul class="header-contacts list">
-                <li class="contact-email"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li class="contact-tel"><a href="tel:+12127724150" class="link">+1 212-772-4150</a></li>
-
-            </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -45,10 +47,12 @@
                     <button type="button" class="filtr-btn">Marketing</button>
                 </div>
 
-                <ul class="list">
+                <ul class="box list">
                     <li class="project"> <img src="./img/Портфолио карт/1 ноут.jpg" class="project-cart" alt="ноутбук">
-                        <h2 class="project-title">Technoduck</h2>
-                        <p class="project-text">Web-site</p>
+                        <div class="box-wrap">
+                            <h2 class="project-title">Technoduck</h2>
+                            <p class="project-text">Web-site</p>
+                        </div>
                     </li>
                     <li class="project"> <img src="./img/Портфолио карт/2 баскет.jpg" class="project-cart" alt="баскет">
                         <h2 class="project-title">Poster New Orlean vs Golden Star</h2>

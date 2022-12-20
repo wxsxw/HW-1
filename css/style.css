@@ -138,18 +138,25 @@ section {
 }
 .logo {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  color: var(--accent-color);
+
+  color: var(--primary-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  margin-right: 93px;
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+.nav > .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header-logo {
-  color: var(--primary-text-color);
-  margin-right: 93px;
+  color: var(--accent-color);
 }
 .header-logo:hover,
 .header-logo:focus {
@@ -189,6 +196,12 @@ section {
   line-height: 1.14px;
   padding: 32px 0;
 }
+
+/* .header-contacts.link ::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+} */
 .contact + .contact {
   margin-left: 40px;
 }
@@ -198,18 +211,32 @@ section {
 .contact + .contart {
   margin-left: 40px;
 }
+/* .contact::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+  display: inline-block;
+  margin-right: 10px;
+  outline: 1px solid tomato;
+} */
+.header-contacts-icon {
+}
 
 /* ----- hero----- */
 
 .hero {
-  width: 1600px;
+  min-width: 1600px;
   height: 600px;
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-
   background-color: var(--BGC-black);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/overley.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   max-width: 696px;
@@ -297,7 +324,72 @@ section {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 16px;
+}
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.soc-item {
   margin-bottom: 30px;
+}
+.soc-item + .soc-item {
+  margin-left: 10px;
+}
+
+.soc-link {
+  width: 44px;
+  height: 44px;
+  /* outline: 1px solid tomato; */
+  border-radius: 50%;
+  /* background-color: tomato; */
+  color: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.soc-link:hover,
+.soc-link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+.team-soc-icon {
+  display: flex;
+  fill: currentColor;
+}
+/* -----   Company------ */
+.company {
+  padding: 94px 0 94px 0;
+}
+
+.company-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-item + .company-item {
+  margin-left: 30px;
+}
+.company-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: #afb1b8;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.company-link:hover,
+.company-link:focus {
+  color: var(--accent-color);
+  border: 1px solid #2196f3;
+}
+.company-icon {
+  fill: currentColor;
 }
 
 /* --- footer--- */
@@ -306,9 +398,24 @@ section {
   color: var(--white-text-color);
   padding: 60px 0 60px 0;
 }
+.footer-flex {
+  display: flex;
+}
+
 .footer-logo {
-  display: inline-block;
+  display: flex;
+
   color: var(--white-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.footer-web {
+  display: inline-block;
+  color: var(--accent-color);
   margin-bottom: 28px;
 }
 .footer-logo:hover,
@@ -321,6 +428,10 @@ section {
 .footer-link {
   margin-bottom: 12px;
 }
+.footer-list .address:hover,
+.footer-list .address:focus {
+  color: var(--accent-color);
+}
 .footer-list .link {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
@@ -329,6 +440,48 @@ section {
 }
 .footer-list .address {
   color: var(--white-text-color);
+}
+
+.sociali-foot {
+  flex-direction: column;
+  margin-left: 70px;
+}
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-text-color);
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.soc-foot-list {
+  display: flex;
+}
+.soc-foot-item {
+}
+.soc-foot-item + .soc-foot-item {
+  margin-left: 10px;
+}
+.soc-foot-link {
+  width: 44px;
+  height: 44px;
+  /* outline: 1px solid tomato; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.soc-foot-link:hover {
+  background-color: var(--accent-color);
+}
+.soc-foot-icon {
+  fill: currentColor;
 }
 /* ----- Portfolio------------ */
 

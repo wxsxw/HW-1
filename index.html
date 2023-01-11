@@ -345,16 +345,72 @@
                             </a></li>
                     </ul>
                 </div>
+                <form action="#" class="footer-form">
+                    <div class="footer-form-wraper">
+                        <label for="email" class="footer-form-title">Subscribe to the newsletter</label>
+                        <input class="footer-form-input" id="email" name="email" type="text" placeholder="E-mail">
+                        <button class="footer-form-btn btn-accent" type="submit">Subscribe
+                            <svg class="footer-btn-icon" width="24" height="24">
+                                <use href="./img/symbol-defs.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                </form>
             </div>
         </section>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-btn" data-modal-close>
-                <svg width="11" height="11">
+                <svg class="modal-btn-icon" width="11" height="11">
                     <use href="./img/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
+            <p class="modal-title">Leave your information and we'll call you back</p>
+            <form action="#">
+                <div class="form-field">
+                    <label for="user-name" class="input-text">Name</label>
+                    <div class="input-wrap">
+                        <input type="text" id="user-name" class="modal-input" name="user-name" placeholder="Name"
+                            required>
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./img/symbol-defs.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="user-tel" class="input-text">Telephone</label>
+                    <div class="input-wrap">
+                        <input type="tel" id="user-tel" class="modal-input" name="user-tel" placeholder="Telephone"
+                            required value="+380">
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./img/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="user-mail" class="input-text">E-mail</label>
+                    <div class="input-wrap">
+                        <input type="email" id="user-mail" class="modal-input" name="user-mail" placeholder="E-mail"
+                            required>
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./img/symbol-defs.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="user-text" class="input-text">Comments</label>
+                    <textarea class="modal-text" name="user-text" id="user-text"
+                        placeholder="Enter the text"></textarea>
+                </div>
+                <div class="form-field">
+                    <input type="checkbox" class="modal-check visually-hidden" id="modal-check" name="policy-check">
+                    <label for="modal-check" class="modal-check-text">I agree with the letter and accept the Terms and
+                        Conditions</label>
+                </div>
+                <button type="submit" class="submit-btn btn-accent">Send</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>

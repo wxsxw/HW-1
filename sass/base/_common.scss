@@ -1,0 +1,32 @@
+body {
+  background: var(--BGC-basic);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
+.section-title {
+  /* color: var(--primary-text-color); */
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  font-family: inherit;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: auto;
+  border-style: none;
+}

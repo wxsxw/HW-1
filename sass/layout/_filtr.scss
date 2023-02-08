@@ -1,7 +1,11 @@
 .filtr {
   margin-bottom: 50px;
   text-align: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
 }
+
 .filtr__btn {
   font-weight: 500;
   font-size: 16px;
@@ -22,6 +26,12 @@
   &:focus {
     background-color: var(--accent-color);
     color: var(--white-text-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filtr__btn:not(:last-child) {
+    margin-bottom: 15px;
   }
 }
 .filtr__btn--accent {
